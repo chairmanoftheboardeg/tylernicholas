@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Tyler Nicholas</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Tyler Nicholas</title>
+  <style>
+    body{font-family:'Segoe UI',Arial;background:linear-gradient(to bottom,#dff3ff,#fff);margin:0;color:#222;}
+    header,footer{background:#0077b6;color:white;padding:1rem 2rem;}
+    header{display:flex;justify-content:space-between;align-items:center;}
+    nav a{color:white;text-decoration:none;margin:0 1rem;}
+    nav a:hover{text-decoration:underline;}
+    main{padding:2rem;max-width:800px;margin:auto;}
+    form{display:flex;flex-direction:column;gap:1rem;}
+    input,textarea{padding:0.8rem;border:1px solid #ccc;border-radius:8px;font-size:1rem;}
+    button{background:#0077b6;color:white;border:none;padding:0.8rem;border-radius:8px;font-size:1rem;cursor:pointer;}
+    button:hover{background:#0096c7;}
+    .social{margin-top:2rem;}
+    footer{text-align:center;margin-top:2rem;}
+  </style>
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Logo" height="45">
     <nav>
-      <div class="logo">Tyler Nicholas</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section class="page-header">
+  <main>
     <h1>Contact Me</h1>
-  </section>
+    <p>If you’d like to reach out, please use the form below or connect through my social links.</p>
+    <form action="mailto:tyler.nicholasefs@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
-  <section class="contact-page">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:tyler.nicholasefs@gmail.com">tyler.nicholasefs@gmail.com</a></p>
-        <p><strong>Discord:</strong> tyler_nicholas</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tyler-nicholas-62999534a" target="_blank">linkedin.com/in/tyler-nicholas</a></p>
-        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/t.nicholas25" target="_blank">@t.nicholas25</a></p>
-        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61558803946306" target="_blank">View Profile</a></p>
-      </div>
-
-      <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+    <div class="social">
+      <p><strong>Discord:</strong> tyler_nicholas</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tyler-nicholas-62999534a" target="_blank">linkedin.com/in/tyler-nicholas-62999534a</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/t.nicholas25" target="_blank">@t.nicholas25</a></p>
+      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61558803946306" target="_blank">Facebook Profile</a></p>
+      <p><strong>Email:</strong> <a href="mailto:tyler.nicholasefs@gmail.com">tyler.nicholasefs@gmail.com</a></p>
     </div>
-  </section>
+  </main>
 
   <footer>
-    <p>© 2025 Tyler Nicholas | Emirates Group Roblox. All Rights Reserved.</p>
+    © 2025 Tyler Nicholas — Hosted under Emirates Group Roblox
   </footer>
 </body>
 </html>
-
